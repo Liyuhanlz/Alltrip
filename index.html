@@ -1,18 +1,68 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
         <title>AllTrip</title>
+
+        <!--Get Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+        <style>
+            :root {
+                /* Latte color theme */
+                --cream: #FFF8F0;
+                --caramel: #C08552;
+                --espresso: #5C3D2E;
+
+                --latte: #F3E3D3;
+                --cocoa: #8B5E3C;
+                --muted: #A68A7B;
+            }
+            body {
+                background-color:var(--cream);
+                color:var(--espresso);
+                font-family: 'Nunito', sans-serif;
+            }
+            h1 {
+                text-align: center;
+                font-family: 'Fredoka', sans-serif;
+                font-size:48px;
+            }
+
+            .tab {
+                padding: 8px 30px;
+                border-radius: 999px;
+                color: var(--muted);
+                text-decoration: none;
+                font-weight:700;
+            }
+            .tab:hover {
+                background-color: var(--latte);
+                color: var(--espresso);
+            }
+            .activate {
+                background-color: var(--latte);
+                color: var(--cocoa);
+            }
+        </style>
+
     </head>
-
     <body>
-        <header>
-            <h1>AllTrip</h1>
-            <nav>
-                <a href="#">Plan</a>
-            </nav>
-        </header>
+        <h1 style="text-align: center">All<span style="color: var(--caramel);">Trip</span></h1>
 
+        <div style="display:flex; flex-direction:row; justify-content:center;gap:8px">
+            <a class="tab active" href="index.html">Home</a>
+            <a class="tab" href="schedule.html">About</a>
+            <a class="tab" href="timeline.html">Timeline</a>
+            <a class="tab" href="Explore.html">Explore</a>
+
+
+        </div>
     </body>
+
+
+
+
+
+
+</html>
