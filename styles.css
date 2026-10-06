@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /* Latte color theme */
+    --cream: #FFF8F0;
+    --caramel: #C08552;
+    --espresso: #5C3D2E;
+
+    --latte: #F3E3D3;
+    --cocoa: #8B5E3C;
+    --muted: #A68A7B;
+}
+
+body {
+    background-color:var(--cream);
+    color:var(--espresso);
+    font-family: 'Nunito', sans-serif;
+}
+
+/* AllTrip header and menu */
+h1 {
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size:48px;
+    padding: 35px;
+    border-radius: 10px;
+    border-bottom: 1.5px solid var(--caramel);
+}
+
+.menuContents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    border-bottom: 1.5px solid var(--caramel);
+    padding: 20px;
+}
+
+.tab {
+    padding: 10px 30px;
+    border-radius: 999px;
+    color: var(--muted);
+    text-decoration: none;
+    font-weight:700;
+
+}
+
+.tab:hover {
+    background-color: var(--latte);
+    color: var(--espresso);
+}
+.activate {
+    background-color: var(--latte);
+    color: var(--cocoa);
+}
+
+/* ======== explore page ======== */
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding: 25px;
+    font-size: 2.5rem;
+    border-radius: 20px;
+    text-decoration: underline var(--caramel);
+    /*border-bottom: 2px solid var(--caramel);*/
+}
+
+#localCont {
+    max-width: 100%;
+    height: fit-content;
+    padding: 10px 90px;
+    
+}
+
+#cardCont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    height: auto;
+    grid-gap: 35px;
+    /*padding: 30px;*/
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 30px;
+    /*background-color: var(--latte);
+    border: 1px solid #d3c5b7;*/
+}
+
+.cards {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 3px solid var(--muted);
+    background-color: #FFF8F0;
+}
+
+.cardHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    color: var(--cream);
+    background-color: var(--muted);
+}
+
+.cardHead p {
+    font-weight: bold;
+}
+
+.imgAndContents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+    height: auto;
+}
+
+.imgCont {
+    display: flex;
+    width: 100%;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #dbd4d4;
+}
+
+.cardContents {
+    align-self: flex-start; /*keeps text aligned to the left*/
+    margin-left: 10px;
+    line-height: 3rem;
+}
+
+

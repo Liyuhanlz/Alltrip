@@ -2,67 +2,27 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AllTrip</title>
-
+        <link rel="stylesheet" href="./styles.css">
         <!--Get Google Fonts-->
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-
-        <style>
-            :root {
-                /* Latte color theme */
-                --cream: #FFF8F0;
-                --caramel: #C08552;
-                --espresso: #5C3D2E;
-
-                --latte: #F3E3D3;
-                --cocoa: #8B5E3C;
-                --muted: #A68A7B;
-            }
-            body {
-                background-color:var(--cream);
-                color:var(--espresso);
-                font-family: 'Nunito', sans-serif;
-            }
-            h1 {
-                text-align: center;
-                font-family: 'Fredoka', sans-serif;
-                font-size:48px;
-            }
-
-            .tab {
-                padding: 8px 30px;
-                border-radius: 999px;
-                color: var(--muted);
-                text-decoration: none;
-                font-weight:700;
-            }
-            .tab:hover {
-                background-color: var(--latte);
-                color: var(--espresso);
-            }
-            .activate {
-                background-color: var(--latte);
-                color: var(--cocoa);
-            }
-        </style>
-
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">     
     </head>
+
     <body>
         <h1 style="text-align: center">All<span style="color: var(--caramel);">Trip</span></h1>
 
-        <div style="display:flex; flex-direction:row; justify-content:center;gap:8px">
-            <a class="tab active" href="index.html">Home</a>
-            <a class="tab" href="schedule.html">About</a>
-            <a class="tab" href="timeline.html">Timeline</a>
-            <a class="tab" href="Explore.html">Explore</a>
-
-
+        <div>
+            <div class="menuContents">
+                <a class="tab active" href="index.html">Home</a>
+                <a class="tab" href="timeline.html">Timeline</a>
+                <a class="tab" href="explore.html">Explore</a>
+                <a class="tab" href="expenses.html">Expenses</a>
+                <a class="tab" href="schedule.html">About</a>
+            </div>
         </div>
+
+
     </body>
-
-
-
-
-
 
 </html>
