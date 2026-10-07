@@ -52,7 +52,7 @@ h1 {
     background-color: var(--latte);
     color: var(--espresso);
 }
-.activate {
+.active {
     background-color: var(--latte);
     color: var(--cocoa);
 }
