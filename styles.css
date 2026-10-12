@@ -19,7 +19,6 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-/* form boxes and buttons don't use the page font by default, so make them match */
 input,
 select,
 textarea,
@@ -248,75 +247,6 @@ footer {
 }
 
 
-/* ======== explore page ======== */
-#localCont {
-    max-width: 100%;
-    height: fit-content;
-    padding: 10px 90px;
-    
-}
-
-#cardCont {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 100%;
-    height: auto;
-    grid-gap: 35px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    border-radius: 30px;
-}
-
-.cards {
-    max-width: 100%;
-    overflow: hidden;
-    border-radius: 30px;
-    border: 3px solid var(--muted);
-    background-color: #FFF8F0;
-}
-
-.cardHead {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: auto;
-    padding: 20px;
-    color: var(--cream);
-    background-color: var(--muted);
-}
-
-.cardHead p {
-    font-weight: bold;
-}
-
-.imgAndContents {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    height: auto;
-    margin: 20px;
-    height: auto;
-}
-
-.imgCont {
-    display: flex;
-    width: 100%;
-    min-height: 150px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-color: #dbd4d4;
-}
-
-.cardContents {
-    align-self: flex-start;
-    margin-left: 10px;
-    line-height: 3rem;
-}
-
 /* ======== schedule page ======== */
 #scheduleCont {
     max-width: 100%;
@@ -405,5 +335,154 @@ footer {
     background-color: var(--latte);
 }
 
+/* ======== explore page ======== */
+#localCont {
+    max-width: 100%;
+    height: fit-content;
+    padding: 10px 90px;
+    
+}
+
+#cardCont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    height: auto;
+    grid-gap: 35px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.cards {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 3px solid var(--muted);
+    background-color: #fffdfa;
+}
+
+.cardHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    color: var(--cream);
+    background-color: var(--muted);
+}
+
+.cardHead p {
+    font-weight: bold;
+}
+
+.imgAndContents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+    height: auto;
+}
+
+.imgCont {
+    display: flex;
+    width: 100%;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #dbd4d4;
+}
+
+.cardContents {
+    align-self: flex-start;
+    margin-left: 10px;
+    line-height: 3rem;
+}
+
 /* ======== expenses page ======== */
 
+#expenseForm {
+    max-width: auto;
+    padding: 50px;
+    margin: 30px 90px;
+    border-radius: 20px;
+    border: 2px solid var(--latte);
+    background-color: #fffdfa;
+}
+
+.expenseTitle {
+    display: flex;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#topForm {
+    display: flex;
+    gap: 170px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    border-top: 1.5px solid var(--latte)
+}
+
+#enterBudget {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#bottomForm {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#bottomForm .expenseTitle {
+    white-space: nowrap;
+    flex-shrink: 0;        
+    margin-bottom: 0; 
+}
+
+#bottomForm .expenseInput {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+}
+
+#createList {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.expenseInput {
+    width: 100%;
+    height: fit-content;
+    padding: 7px 15px;
+    font-size: 1.1rem;
+    border-radius: 40px;
+    border: 1px solid var(--cocoa);
+    background-color: var(--cream);
+}
+
+#createBtn {
+    font-size: 1rem;
+    padding: 7px 10px;
+    border-radius: 15px;
+    color: var(--cream);
+    border: 2px solid var(--espresso);
+    background-color: var(--cocoa);
+}
+
+#createBtn:hover {
+    color: var(--cream);
+    cursor: pointer;
+    border: 2px solid var(--caramel);
+    background-color: #9c826e;
+}
