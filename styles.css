@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /* Latte color theme */
+    --cream: #FFF8F0;
+    --caramel: #C08552;
+    --espresso: #5C3D2E;
+
+    --latte: #F3E3D3;
+    --cocoa: #8B5E3C;
+    --muted: #A68A7B;
+}
+
+body {
+    background-color:var(--cream);
+    color:var(--espresso);
+    font-family: 'Nunito', sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+    color: inherit;
+}
+
+/* AllTrip header and menu */
+h1 {
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size:48px;
+    padding: 35px;
+    border-radius: 20px;
+    border-bottom: 1.5px solid var(--caramel);
+}
+
+.menuContents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    border-bottom: 1.5px solid var(--caramel);
+    padding: 20px;
+}
+
+.tab {
+    padding: 10px 30px;
+    border-radius: 999px;
+    color: var(--muted);
+    text-decoration: none;
+    font-weight:700;
+
+}
+
+.tab:hover {
+    background-color: var(--latte);
+    color: var(--espresso);
+}
+.active {
+    background-color: var(--latte);
+    color: var(--cocoa);
+}
+
+/* heading title pages*/
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding: 25px;
+    font-size: 2.5rem;
+    border-radius: 20px;
+    text-decoration: underline var(--caramel);
+}
+
+/* footer section */
+footer {
+    max-width: 100%;
+    height: auto;
+    margin-top: 80px;
+    border-radius: 20px;
+    background-color: var(--latte);
+    border-top: 1.5px solid var(--caramel);
+}
+
+.footerContents {
+    display: flex;
+    gap: 150px;
+    line-height: 3rem;
+    margin: 30px 110px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding: 12px;
+    color: var(--cream);
+    background-color: var(--muted);
+}
+
+/* ======== Home page: left sidebar ======== */
+.homeLayout {
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 40px 60px;
+}
+
+.smallText {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.leftSidebar {
+    align-self:start;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--latte);
+    background-color: #fffdfa;
+}
+
+.sidebarTitle {
+    margin-bottom: 15px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.3rem;
+}
+
+.tripTabs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tripTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--latte);
+    color: var(--muted);
+    text-align: center;
+}
+
+.tripTab:hover {
+    background-color: var(--latte);
+}
+
+.tripIcon {
+    font-size: 1.4rem;
+}
+
+.tripTabText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tripTabText strong {
+    font-size: 0.95rem;
+}
+
+.renameBtn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.renameBtn:hover {
+    background-color: var(--cream);
+    color: var(--cocoa);
+}
+
+/* ======== Home page: main content ======== */
+.planBox {
+    padding: 30px 35px;
+    border-radius: 20px;
+    border: 2px solid var(--latte);
+    background-color: #fffdfa;
+}
+
+.planTitle {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.8rem;
+}
+
+.planSection {
+    padding: 25px 0;
+    border-bottom: 1.5px solid var(--latte);
+}
+
+.sectionTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.15rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+
+/* different types of trip tabs */
+.typeCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.typeCard input,
+.pillToggle input {
+    display: none;
+}
+
+.typeCardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 18px 12px;
+    border: 2px solid var(--latte);
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* ======== schedule page ======== */
+#scheduleCont {
+    max-width: 100%;
+    height: fit-content;
+    padding: 10px 90px;
+}
+
+#scheduleCont h3 {
+    text-align: center;
+}
+
+/* horizontal timeline: one card per day */
+#timelineCont {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto; /* scroll sideways if there are many days */
+    margin: 20px 0 50px;
+    padding-bottom: 10px;
+}
+
+.dayCards {
+    flex: 0 0 220px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid var(--muted);
+    background-color: #FFF8F0;
+}
+
+/* centers the row of day cards (and still scrolls normally when there are too many) */
+.dayCards:first-child {
+    margin-left: auto;
+}
+
+.dayCards:last-child {
+    margin-right: auto;
+}
+
+.dayHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    color: var(--cream);
+    background-color: var(--muted);
+}
+
+.dayHead p {
+    font-weight: bold;
+}
+
+.dayContents {
+    padding: 15px 20px;
+    line-height: 2rem;
+}
+
+.dayContents ul {
+    padding-left: 20px;
+}
+
+/* vertical plan for one day: time on the left, activity on the right */
+#dayPlanCont {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 700px;
+    margin: 20px auto 0; /* auto left/right = centered */
+}
+
+.planRow {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.planTime {
+    width: 80px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.planItem {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 15px;
+    border-left: 5px solid var(--caramel);
+    background-color: var(--latte);
+}
+
+/* ======== explore page ======== */
+#localCont {
+    max-width: 100%;
+    height: fit-content;
+    padding: 10px 90px;
+    
+}
+
+#cardCont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    height: auto;
+    grid-gap: 35px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.cards {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 3px solid var(--muted);
+    background-color: #fffdfa;
+}
+
+.cardHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    color: var(--cream);
+    background-color: var(--muted);
+}
+
+.cardHead p {
+    font-weight: bold;
+}
+
+.imgAndContents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+    height: auto;
+}
+
+.imgCont {
+    display: flex;
+    width: 100%;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #dbd4d4;
+}
+
+.cardContents {
+    align-self: flex-start;
+    margin-left: 10px;
+    line-height: 3rem;
+}
+
+/* ======== expenses page ======== */
+
+#expenseForm {
+    max-width: auto;
+    padding: 50px;
+    margin: 30px 90px;
+    border-radius: 20px;
+    border: 2px solid var(--latte);
+    background-color: #fffdfa;
+}
+
+.expenseTitle {
+    display: flex;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#topForm {
+    display: flex;
+    gap: 170px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    border-top: 1.5px solid var(--latte)
+}
+
+#enterBudget {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#bottomForm {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#bottomForm .expenseTitle {
+    white-space: nowrap;
+    flex-shrink: 0;        
+    margin-bottom: 0; 
+}
+
+#bottomForm .expenseInput {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+}
+
+#createList {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.expenseInput {
+    width: 100%;
+    height: fit-content;
+    padding: 7px 15px;
+    font-size: 1.1rem;
+    border-radius: 40px;
+    border: 1px solid var(--cocoa);
+    background-color: var(--cream);
+}
+
+#createBtn {
+    font-size: 1rem;
+    padding: 7px 10px;
+    border-radius: 15px;
+    color: var(--cream);
+    border: 2px solid var(--espresso);
+    background-color: var(--cocoa);
+}
+
+#createBtn:hover {
+    color: var(--cream);
+    cursor: pointer;
+    border: 2px solid var(--caramel);
+    background-color: #9c826e;
+}

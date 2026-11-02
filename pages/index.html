@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AllTrip</title>
+        <link rel="stylesheet" href="./styles.css">
+        <!--Get Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">     
+    </head>
+
+    <body>
+        <h1 style="text-align: center">All<span style="color: var(--caramel);">Trip</span></h1>
+
+        <div>
+            <div class="menuContents">
+                <a class="tab active" href="index.html">Home</a>
+                <a class="tab" href="schedule.html">Schedule</a>
+                <a class="tab" href="explore.html">Explore</a>
+                <a class="tab" href="expenses.html">Expenses</a>
+            </div>
+        </div>
+
+        <h2 style="text-align: center">Welcome to AllTrip</h2>
+
+        <div class="homeLayout">
+
+            <!-- ======== Left: vertical tabs of planned trips ======== -->
+            <aside class="leftSidebar">
+                <p class="sidebarTitle">My Trips</p>
+
+                <div class="tripTabs">
+                    <div class="tripTab active">
+                        <span class="tripIcon">🚗</span>
+                        <span class="tripTabText">
+                            <strong>Visit friend in Arizona</strong>
+                            <span class="smallText">Oct 12 - 16, 2026 </span>
+                        </span>
+                            
+                            <button class="renameBtn">✎</button>
+
+                    </div>
+                </div>
+
+            </aside>
+
+            <!-- ======== Right: plan a trip ======== -->
+            <form class="planBox">
+                <p class="planTitle">Plan a Trip</p>
+
+                <div class="planSection">
+                    <div class="field">
+                        <label class="sectionTitle" for="tripName">Trip Name</label>
+                        <input id="tripName" type="text" placeholder="Enter Trip Name">
+                    </div>
+
+
+                    <p class="sectionTitle">Trip Details</p>
+                    <input type="text" placeholder="Trip Name" required>
+                    <input type="date" placeholder="Start Date" required>
+                    <input type="date" placeholder="End Date" required>
+                </div>
+
+                <div class="planSection">
+                    <p class="sectionTitle">Destination</p>
+                    <input type="text" placeholder="Where are you going?" required>
+                </div>
+                <button type="submit">Add Trip</button>
+
+            </form>
+        </div>
+
+        <footer>
+            <div class="footerContents">
+                <div>
+                    <h4>Company:</h4>
+                    <p>About<br>
+                    Contact<br>
+                    FAQ<br>
+                    Careers<br>
+                    Feedback<br></p>
+                </div>
+                <div>
+                    <h4>Policies:</h4>
+                    <p>Privacy<br>
+                    Cookies<br>
+                    Accessibility<br>
+                    Terms & Conditions<br>
+                    Your Privacy Choices</p>
+                </div>
+                <div>
+                    <h4>Our Services:</h4>
+                    <p>Schedule Trip<br>
+                    Local Attractions<br></p>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <span>© 2026 AllTrip. All rights reserved.</span>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
