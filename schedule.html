@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AllTrip</title>
+        <link rel="stylesheet" href="./styles.css">
+        <!--Get Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1 style="text-align: center">All<span style="color: var(--caramel);">Trip</span></h1>
+
+        <div>
+            <div class="menuContents">
+                <a class="tab" href="index.html">Home</a>
+                <a class="tab active" href="schedule.html">Schedule</a>
+                <a class="tab" href="explore.html">Explore</a>
+                <a class="tab" href="expenses.html">Expenses</a>
+
+            </div>
+        </div>
+
+        <h2>Schedule</h2>
+
+        <div id="scheduleCont">
+            <h3>Trip Timeline</h3>
+
+            <!-- one card per day, scrolls sideways if there are many days -->
+            <div id="timelineCont">
+                <div class="dayCards">
+                    <div class="dayHead">
+                        <p>Day 1</p>
+                    </div>
+                    <div class="dayContents">
+                        <p class="smallText">Date</p>
+                        <ul>
+                            <li>Activity</li>
+                            <li>Activity</li>
+                            <li>Activity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dayCards">
+                    <div class="dayHead">
+                        <p>Day 2</p>
+                    </div>
+                    <div class="dayContents">
+                        <p class="smallText">Date</p>
+                        <ul>
+                            <li>Activity</li>
+                            <li>Activity</li>
+                            <li>Activity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dayCards">
+                    <div class="dayHead">
+                        <p>Day 3</p>
+                    </div>
+                    <div class="dayContents">
+                        <p class="smallText">Date</p>
+                        <ul>
+                            <li>Activity</li>
+                            <li>Activity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dayCards">
+                    <div class="dayHead">
+                        <p>Day 4</p>
+                    </div>
+                    <div class="dayContents">
+                        <p class="smallText">Date</p>
+                        <ul>
+                            <li>Activity</li>
+                            <li>Activity</li>
+                            <li>Activity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Day 1 Plan</h3>
+
+            <!-- vertical schedule for the selected day -->
+            <div id="dayPlanCont">
+                <div class="planRow">
+                    <p class="planTime">9:00 AM</p>
+                    <div class="planItem">
+                        <p style="font-weight: bold;">Activity</p>
+                        <p class="smallText">Location</p>
+                    </div>
+                </div>
+
+                <div class="planRow">
+                    <p class="planTime">12:00 PM</p>
+                    <div class="planItem">
+                        <p style="font-weight: bold;">Lunch</p>
+                        <p class="smallText">Location</p>
+                    </div>
+                </div>
+
+                <div class="planRow">
+                    <p class="planTime">2:00 PM</p>
+                    <div class="planItem">
+                        <p style="font-weight: bold;">Activity</p>
+                        <p class="smallText">Location</p>
+                    </div>
+                </div>
+
+                <div class="planRow">
+                    <p class="planTime">6:00 PM</p>
+                    <div class="planItem">
+                        <p style="font-weight: bold;">Dinner</p>
+                        <p class="smallText">Location</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footerContents">
+                <div>
+                    <h4>Company:</h4>
+                    <p>About<br>
+                    Contact<br>
+                    FAQ<br>
+                    Careers<br>
+                    Feedback<br></p>
+                </div>
+                <div>
+                    <h4>Policies:</h4>
+                    <p>Privacy<br>
+                    Cookies<br>
+                    Accessibility<br>
+                    Terms & Conditions<br>
+                    Your Privacy Choices</p>
+                </div>
+                <div>
+                    <h4>Our Services:</h4>
+                    <p>Schedule Trip<br>
+                    Local Attractions<br></p>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <span>© 2026 AllTrip. All rights reserved.</span>
+            </div>
+        </footer>
+    </body>
+
+</html>
